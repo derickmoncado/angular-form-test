@@ -7,6 +7,10 @@ import { FirstFormComponent } from './components/first-form/first-form.component
 import { SecondFormComponent } from './components/second-form/second-form.component';
 import { ThirdFormComponent } from './components/third-form/third-form.component';
 import { HomeComponent } from './components/home/home.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { MatSliderModule } from '@angular/material/slider';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
 
 @NgModule({
   declarations: [
@@ -14,13 +18,16 @@ import { HomeComponent } from './components/home/home.component';
     FirstFormComponent,
     SecondFormComponent,
     ThirdFormComponent,
-    HomeComponent
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatSliderModule,
+    MatButtonToggleModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
