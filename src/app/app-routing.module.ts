@@ -4,12 +4,14 @@ import { HomeComponent } from './components/home/home.component';
 import { FirstFormComponent } from './components/first-form/first-form.component';
 import { SecondFormComponent } from './components/second-form/second-form.component';
 import { ThirdFormComponent } from './components/third-form/third-form.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'first-form', component: FirstFormComponent },
-  { path: 'second-form', component: SecondFormComponent },
-  { path: 'third-form', component: ThirdFormComponent },
+  { path: 'first', component: FirstFormComponent },
+  { path: 'second', component: SecondFormComponent },
+  { path: 'third', component: ThirdFormComponent },
+  { path: '**', component: PageNotFoundComponent },
 ];
 
 @NgModule({
