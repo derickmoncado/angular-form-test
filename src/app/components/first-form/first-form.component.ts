@@ -6,6 +6,6 @@ import { FormDataService } from '../../shared/form-data.service';
   templateUrl: './first-form.component.html',
   styleUrls: ['./first-form.component.scss'],
 })
-export class FirstFormComponent {
+export class masterFormComponent {
   constructor(public formDataService: FormDataService) {}
 }

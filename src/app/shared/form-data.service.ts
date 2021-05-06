@@ -6,11 +6,11 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 })
 export class FormDataService {
   // Properties
-  public firstForm!: FormGroup;
+  public masterForm!: FormGroup;
 
   // Form group
   initializeForm(): void {
-    this.firstForm = this.fb.group({
+    this.masterForm = this.fb.group({
       comment: '',
       description: '',
     });
