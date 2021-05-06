@@ -8,12 +8,14 @@ import { SecondFormComponent } from './components/second-form/second-form.compon
 import { ThirdFormComponent } from './components/third-form/third-form.component';
 import { HomeComponent } from './components/home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { NoopComponent } from './components/noop/noop.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,7 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
     ThirdFormComponent,
     HomeComponent,
     PageNotFoundComponent,
+    NoopComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,6 +35,8 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
     MatIconModule,
     MatFormFieldModule,
     MatInputModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

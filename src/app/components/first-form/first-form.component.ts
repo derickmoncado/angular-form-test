@@ -1,15 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { FormDataService } from '../../shared/form-data.service';
 
 @Component({
   selector: 'app-first-form',
   templateUrl: './first-form.component.html',
-  styleUrls: ['./first-form.component.scss']
+  styleUrls: ['./first-form.component.scss'],
 })
-export class FirstFormComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+export class FirstFormComponent {
+  constructor(public formDataService: FormDataService) {}
 }

@@ -1,15 +1,25 @@
 <div class="form-wrapper">
   <h1>Second Form!</h1>
 
-  <form>
+  <form [formGroup]="formDataService.firstForm">
     <mat-form-field appearance="fill">
       <mat-label>Comment</mat-label>
-      <input matInput placeholder="Leave a comment..." value="" />
+      <input
+        type="text"
+        matInput
+        placeholder="Leave a comment..."
+        value=""
+        formControlName="comment"
+      />
     </mat-form-field>
 
     <mat-form-field appearance="fill">
       <mat-label>Description</mat-label>
-      <textarea matInput placeholder="Leave a description..."></textarea>
+      <textarea
+        matInput
+        placeholder="Leave a description..."
+        formControlName="description"
+      ></textarea>
     </mat-form-field>
   </form>
 </div>

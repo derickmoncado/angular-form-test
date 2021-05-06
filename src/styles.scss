@@ -34,8 +34,10 @@ body {
   align-items: center;
   justify-content: center;
 
-  .mat-list-item-content {
-    text-align: center !important;
-    display: inline-block !important;
+  .mat-list {
+    display: flex;
+    .mat-list-item {
+      display: inline-block;
+    }
   }
 }
